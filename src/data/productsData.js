@@ -1,0 +1,88 @@
+const productsData = [
+  {
+    id: 1,
+    img: "/images/prod1.png",
+    title: "Product No 1",
+    price: 1099,
+    quantity: 1,
+  },
+  {
+    id: 2,
+    img: "/images/prod2.png",
+    title: "Product No 2",
+    price: 649,
+    quantity: 1,
+  },
+  {
+    id: 3,
+    img: "/images/prod3.png",
+    title: "Product No 3",
+    price: 9999,
+    quantity: 1,
+  },
+  {
+    id: 4,
+    img: "/images/prod4.png",
+    title: "Product No 4",
+    price: 899,
+    quantity: 1,
+  },
+  {
+    id: 5,
+    img: "/images/prod5.png",
+    title: "Product No 5",
+    price: 999,
+    quantity: 1,
+  },
+  {
+    id: 6,
+    img: "/images/prod6.png",
+    title: "Product No 6",
+    price: 5999,
+    quantity: 1,
+  },
+  {
+    id: 7,
+    img: "/images/prod7.png",
+    title: "Product No 7",
+    price: 1599,
+    quantity: 1,
+  },
+  {
+    id: 8,
+    img: "/images/prod8.png",
+    title: "Product No 8",
+    price: 3699,
+    quantity: 1,
+  },
+  {
+    id: 9,
+    img: "/images/prod1.png",
+    title: "Product No 9",
+    price: 1099,
+    quantity: 1,
+  },
+  {
+    id: 10,
+    img: "/images/prod2.png",
+    title: "Product No 10",
+    price: 649,
+    quantity: 1,
+  },
+  {
+    id: 11,
+    img: "/images/prod3.png",
+    title: "Product No 11",
+    price: 9999,
+    quantity: 1,
+  },
+  {
+    id: 12,
+    img: "/images/prod4.png",
+    title: "Product No 12",
+    price: 899,
+    quantity: 1,
+  },
+];
+
+export default productsData;
