@@ -1,6 +1,11 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { toggleCart, removeItem } from "../store/slices/cartSlice";
+import {
+  toggleCart,
+  removeItem,
+  incrementItem,
+  decrementItem,
+} from "../store/slices/cartSlice";
 
 const Cart = () => {
   const { isCartOpen, cartItems } = useSelector((state) => state.cart);
@@ -13,6 +18,14 @@ const Cart = () => {
 
   const handleRemove = (itemId) => {
     dispatch(removeItem(itemId));
+  };
+
+  const handleIncrement = (itemId) => {
+    dispatch(incrementItem(itemId));
+  };
+
+  const handleDecrement = (itemId) => {
+    dispatch(decrementItem(itemId));
   };
 
   // disable the body-scroll when the Cart is open
@@ -68,9 +81,9 @@ const Cart = () => {
                         </h3>
                       </div>
                       <div className="cart_items_quantity ">
-                        <span>&#8722;</span>
+                        <span onClick={() => handleDecrement(id)}>&#8722;</span>
                         <b>{quantity}</b>
-                        <span>&#43;</span>
+                        <span onClick={() => handleIncrement(id)}>&#43;</span>
                       </div>
 
                       <div
